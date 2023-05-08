@@ -42,7 +42,7 @@ export const Home = () => {
         } />
       </div>
       <div className="container d-flex justify-content-evenly">
-        <DataTable value={tdata} header={header}  stripedRows tableStyle={{ minWidth: '50rem' }} filters={filters} >
+        <DataTable value={tdata} header={header}  stripedRows filters={filters} className="tables">
           <Column field="symbol" header={"Symbol"} className="p-4"/>
           <Column field="name" header={"Name"} sortable className="p-4"/>
           <Column field="rank" header={"Rank"}  sortable className="p-4"/>
